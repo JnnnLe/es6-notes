@@ -1,0 +1,9 @@
+//DEFAULT FN ARGUEMENTS
+
+  //default args can be assigned in the parameter of the FN
+
+  // null !== undefined
+  
+    //null indicates that the developer wants the value there to be noted as nothing
+
+    //undefined indicates that there is a value of undefined
