@@ -5,3 +5,15 @@
     // {example: example,
         name: 'Jenn'} === 
        {example, name: 'Jenn'}
+
+  //when there is a method, omit the function keyword and '='
+    // fn ... {
+      example = function() {
+        ....execute
+      }
+    } ===
+    //fn ... {
+      example() {
+        ....execute
+      }
+    }
