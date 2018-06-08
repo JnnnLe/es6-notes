@@ -1,0 +1,7 @@
+//fat Arrow fn uses lexical scoping
+
+//Object literals
+  //when key and value have the same name, they only need to be written once.
+    // {example: example,
+        name: 'Jenn'} === 
+       {example, name: 'Jenn'}
