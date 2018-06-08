@@ -1,0 +1,20 @@
+//REST AND SPREAD OPERATORS
+
+//Spread operator permits the fn arg to be dynamic 
+
+//Concat with Spread:
+  //let a = [1,2,3];
+  //let b = [4,5,6]
+    concat: a.concat(b);
+
+  ES6: [...a, ...b]
+
+  ===> [1,2,3,4,5,6];
+
+  Another example:
+  lets day you want to add 'blue':
+    ['blue', ...a, ...b] ===> 
+    ['blue', 1,2,3,4,5,6]
+
+
+// ...rest (same)
