@@ -1,14 +1,14 @@
 //fat Arrow fn uses lexical scoping
 
-//Object literals
+//Enhancing Object literals
   //when key and value have the same name, they only need to be written once.
     // {example: example,
         name: 'Jenn'} === 
        {example, name: 'Jenn'}
 
-  //when there is a method, omit the function keyword and '='
+  //when there is a method, omit '`methodName`: function()'
     // fn ... {
-      example = function() {
+      example : function() {
         ....execute
       }
     } ===
