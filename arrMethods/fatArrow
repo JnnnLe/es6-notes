@@ -1,19 +1,22 @@
 //fat Arrow fn uses lexical scoping
 
 //Enhancing Object literals
-  //when key and value have the same name, they only need to be written once.
-    // {example: example,
-        name: 'Jenn'} === 
-       {example, name: 'Jenn'}
 
-  //when there is a method, omit '`methodName`: function()'
-    // fn ... {
-      example : function() {
-        ....execute
+  //Same key/value name:
+    //when key and value have the same name, they only need to be written once.
+      // {example: example,
+          name: 'Jenn'} === 
+        {example, name: 'Jenn'}
+
+  //Methods in objects:
+    //when there is a method, omit '`methodName`: function()'
+      // fn ... {
+        example : function() {
+          ....execute
+        }
+      } ===
+      //fn ... {
+        example() {
+          ....execute
+        }
       }
-    } ===
-    //fn ... {
-      example() {
-        ....execute
-      }
-    }
