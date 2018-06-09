@@ -1,0 +1,10 @@
+ES6 Classes
+  //simplier than prototyping of es5
+
+  // `class Toyota extends Car
+        constructor() {   //<== do not deconstruct constructor obj, will throw error
+          super()
+        }
+
+        ....
+        `
