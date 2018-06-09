@@ -1,0 +1,34 @@
+GENERATORS + (for of loops)
+
+  a fn that can be entered and exited many times
+
+  syntax:
+    function *shopping() || function* shopping() {
+      ....
+    }
+
+    function* shopping() {
+      //stuff on the sidewalk
+
+      //walking down the side walk
+
+      //go into the store with cash
+      const stuffFromStore = yield 'cash';
+
+      //walking back home
+      return stuffFromStore
+    }
+
+    const gen = shopping(); //does NOT envoke fn
+
+      //gen.next() ==> {'done': false} //leaving our house
+      //walks into store
+      //buys stuff
+      
+      //gen.next(groceries) ==> {'done': true}  //leaving the store
+
+    
+
+      
+
+    
