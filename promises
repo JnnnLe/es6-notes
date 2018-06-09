@@ -7,8 +7,9 @@
     // code examples:
 
     //snippet
-    promise = new Promise((resolve, reject) => { resolve() });
+    promise = new Promise((resolve, reject) => { resolve() }, 2000);
 
-    promise.then(() => {
-      console.log('Completed')
-    })
+    promise
+      .then(() => console.log('Completed'))
+      .then(() => console.log('X2'))
+      .catch(() => console.log('exit'))
