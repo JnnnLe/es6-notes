@@ -1,5 +1,7 @@
 GENERATORS + (for of loops)
 
+Note: .map and other array helpers do NOT work on generators, must use for-of loop again
+
   a fn that can be entered and exited many times
 
   syntax:
@@ -7,6 +9,7 @@ GENERATORS + (for of loops)
       ....
     }
 
+    (preferred)
     function* shopping() {
       //stuff on the sidewalk
 
@@ -19,6 +22,7 @@ GENERATORS + (for of loops)
       return stuffFromStore
     }
 
+    (crucial const && needed to be envoke with next)
     const gen = shopping(); //does NOT envoke fn
 
       //gen.next() ==> {'done': false} //leaving our house
@@ -29,6 +33,36 @@ GENERATORS + (for of loops)
 
     
 
-      
+  **** When using generators with for-in loops, it can iterate over wildly data structures, not just [] || {} ****
 
-    
+    iterator delegation means: you can iterate over a generater within a generator by using yield* `generatorConstFnName`
+
+
+  Symbol.Iterator - special object, tells the for-of loop what ot iterate
+    //can be use in lue of value of generator
+
+    (as a method inside of object)
+    const engineeringTeam = {
+      lead: 'Jenn',
+          ....
+
+      *[Symbol.Iterator]() {
+        yield this.content;
+        for (let child of this.children) {
+          yield* child;
+        }
+      }
+    }
+
+
+
+
+************
+
+  Google: [
+    generator delegation, 
+    key interpolation  
+  ]
+
+  ***********
+
