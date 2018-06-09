@@ -1,0 +1,14 @@
+//ES6 PROMISES
+
+    //ES6 makes promises uniform for all browsers and no need for a third party library
+
+    //3 states: unresolved, resolved(then), rejected(catch)
+
+    // code examples:
+
+    //snippet
+    promise = new Promise((resolve, reject) => { resolve() });
+
+    promise.then(() => {
+      console.log('Completed')
+    })
