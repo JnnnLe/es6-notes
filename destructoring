@@ -1,0 +1,39 @@
+// DESTRUCTORING
+
+  //Objects:
+    the {} are on the left hadn side and they refer to the property of the object/fn
+    //{ find key } => will return value
+
+  //Arrays:
+    the args of [] refer to the items in the array
+    //[ renamingIndex ] => will return value
+
+  //Can mix destructoring of obj and arr
+
+  //Destructoring objects take away the worry of the order of passing parameters
+
+
+  const points = [
+    [4,5],
+    [5,6],
+    [7,8]
+  ]
+
+//return [{'x': x, 'y': y} , ....]
+
+const displayCoords = (points) => {
+  points.map(([x,y]) => {
+    return {x, y} 
+    // map returns [], therefore the {} will be encapsulated in []
+  })
+}
+
+  //recursive [] destructoring, return the double amt of the array input values:
+    const numbers = [1, 2, 3];
+
+    const double = (numbers) => {
+        const [number, ...rest] = numbers;
+        return number === undefined ? [] : [number * 2, ...double(rest)]
+    }
+
+    // returns [2, 4, 6];
