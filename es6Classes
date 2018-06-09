@@ -1,10 +1,31 @@
 ES6 Classes
   //simplier than prototyping of es5
+  
+  //creating a subClass to another class:
 
-  // `class Toyota extends Car
-        constructor() {   //<== do not deconstruct constructor obj, will throw error
-          super()
+    // `class Toyota extends Car
+          constructor() {   //<== do not deconstruct constructor obj, will throw error
+            super()
+          }
+
+          ....
+          `
+
+    eg:
+      class Monster {
+        constructor(options) {
+          this.health = 100;
+          this.name = options.name;
         }
+      }
 
-        ....
-        `
+      class Snake extends Monster {
+          constructor(options) {
+              super(options)
+          }
+          
+          bite (monsterName) {
+              monsterName.health -= 10;
+          }
+
+      }
