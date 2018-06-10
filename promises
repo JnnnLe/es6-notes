@@ -4,12 +4,19 @@
 
     //3 states: unresolved, resolved(then), rejected(catch)
 
-    // code examples:
+      // code examples:
 
-    //snippet
-    promise = new Promise((resolve, reject) => { resolve() }, 2000);
+      //snippet
+      promise = new Promise((resolve, reject) => { resolve() }, 2000);
 
-    promise
-      .then(() => console.log('Completed'))
-      .then(() => console.log('X2'))
-      .catch(() => console.log('exit'))
+      promise
+        .then(() => console.log('Completed'))
+        .then(() => console.log('X2'))
+        .catch(() => console.log('exit'))
+
+
+    //FETCH - native to JS in ES6 
+
+      //dissimilar to all other ajax library
+
+      //take away: should wait until the fetch fn in es6 is mor euniform with other libraries
